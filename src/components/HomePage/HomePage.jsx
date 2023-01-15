@@ -9,6 +9,7 @@ import { useState } from 'react';
 
 
 const HomePage = () => {
+
     const sessionDet = useContext(SessionContext)
     const [address, setAddress] = useState('')
     const handleSubmit = async (text) => {
