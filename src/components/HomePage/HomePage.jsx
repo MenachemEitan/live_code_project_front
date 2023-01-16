@@ -22,7 +22,7 @@ const HomePage = () => {
 
 
     const getIsTeacher = async () => {
-        const teacherOrStudentResult = await axios.get('http://localhost:8080/teacherOrStudent');
+        const teacherOrStudentResult = await axios.get('http://44.202.9.124:8080/teacherOrStudent');
         const isTeacher = teacherOrStudentResult.data;
 
         return isTeacher;

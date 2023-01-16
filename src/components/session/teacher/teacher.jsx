@@ -18,7 +18,7 @@ const TeacherSession = () => {
     let handleClose = () => {
     }
     useEffect(() => {
-        const socket = new WebSocket(`ws://localhost:4000/session?name=${sessionDet.session}`);
+        const socket = new WebSocket(`ws://44.202.9.124:8080/session?name=${sessionDet.session}`);
         socket.addEventListener('open', function (event) {
         });
 
