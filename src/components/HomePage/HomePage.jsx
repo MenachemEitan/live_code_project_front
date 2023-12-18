@@ -22,7 +22,11 @@ const HomePage = () => {
 
 
     const getIsTeacher = async () => {
-        const teacherOrStudentResult = await axios.get('http://44.202.9.124:8080/teacherOrStudent');
+        console.log("teacherOrStudentResult ")
+        // const teacherOrStudentResult = await axios.get('http://44.202.9.124:8080/teacherOrStudent');
+        const teacherOrStudentResult = await axios.get('http://localhost:8080/teacherOrStudent');
+        console.log("teacherOrStudentResult ", teacherOrStudentResult)
+
         const isTeacher = teacherOrStudentResult.data;
 
         return isTeacher;
@@ -30,7 +34,6 @@ const HomePage = () => {
 
 
     }
-
 
 
     return (

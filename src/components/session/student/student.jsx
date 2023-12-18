@@ -9,7 +9,8 @@ import { SessionContext } from '../../../sessionContext';
 const StudentSession = () => {
     const sessionDet = useContext(SessionContext)
     const conectionCount = useRef(0)
-    const socket = new WebSocket(`ws://44.202.9.124:8080/session?name=${sessionDet.session}`);
+    // const socket = new WebSocket(`ws://44.202.9.124:8080/session?name=${sessionDet.session}`);
+    const socket = new WebSocket(`ws://localhost:4000/session?name=${sessionDet.session}`);
     socket.addEventListener('open', function (event) {
     });
     const language = "js"
